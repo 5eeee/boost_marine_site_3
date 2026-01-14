@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оборудование и запчасти | Boost Marine — профессиональный ремонт яхт, катеров и гидроциклов</title>
+  
+  <!-- Фонт Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght=300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Иконки FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Swiper для слайдера -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  
+  <!-- Основные стили -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="equipment.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+  
+  <!-- ==================== ШАПКА САЙТА ==================== -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <!-- Логотип -->
+        <a href="index.html" class="logo">
+          <img src="./assets/logo2.png" alt="Boost Marine" class="logo__img">
+          <div class="logo__text">
+            <span class="logo__top">BOOST</span>
+            <span class="logo__bottom">MARINE</span>
+          </div>
+        </a>
+        
+        <!-- Навигация -->
+        <nav class="nav">
+          <a href="index.html#works" class="nav__link">Работы</a>
+          <a href="index.html#team" class="nav__link">Команда</a>
+          <a href="services.html" class="nav__link">Услуги</a>
+          <a href="equipment.html" class="nav__link active">Оборудование</a>
+          <a href="index.html#contacts" class="nav__link">Контакты</a>
+        </nav>
+        
+        <!-- Контакты -->
+        <div class="header-contacts">
+          <div class="header-phone-wrapper">
+            <a href="tel:+123456789" class="header-phone">+1 234 567 89</a>
+            <span class="header-tagline">Выезд без ограничений</span>
+          </div>
+          
+          <!-- Виджет Telegram -->
+          <a href="https://t.me/boostmarinegroup" class="header-tg-widget" target="_blank" aria-label="Telegram канал">
+            <i class="fab fa-telegram"></i>
+          </a>
+          
+          <div class="header-social">
+            <a href="https://t.me/BoostMarine" class="social-icon" target="_blank" aria-label="Telegram менеджер">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://wa.me/123456789" class="social-icon" target="_blank" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Кнопка связи для мобильных -->
+        <button class="contact-toggle mobile-only" aria-label="Контакты">
+          <i class="fas fa-phone"></i>
+        </button>
+        
+        <!-- Кнопка меню для мобильных -->
+        <button class="menu-toggle" aria-label="Открыть меню">
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+        </button>
+      </div>
+      
+      <!-- Мобильное меню контактов -->
+      <div class="mobile-contacts">
+        <a href="tel:+123456789" class="mobile-phone">+1 234 567 89</a>
+        <div class="mobile-social">
+          <a href="https://t.me/boostmarinegroup" class="social-icon" target="_blank">
+            <i class="fab fa-telegram"></i>
+          </a>
+          <a href="https://t.me/BoostMarine" class="social-icon" target="_blank">
+            <i class="fab fa-telegram"></i>
+          </a>
+          <a href="https://wa.me/123456789" class="social-icon" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== БАННЕР ОБОРУДОВАНИЯ ==================== -->
+  <section class="equipment-banner">
+    <div class="container">
+      <div class="equipment-banner__content">
+        <h1 class="equipment-banner__title">Оборудование и запчасти</h1>
+        <p class="equipment-banner__subtitle">Подбор и поставка оборудования и комплектующих под конкретную конфигурацию судна</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== КАТЕГОРИИ ОБОРУДОВАНИЯ ==================== -->
+  <section class="equipment-categories">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Категории оборудования</h2>
+        <p class="section-subtitle">Работаем только с проверенными решениями и тем, что действительно имеет смысл устанавливать</p>
+      </div>
+      
+      <div class="categories-grid">
+        <div class="category-card">
+          <div class="category-card__image">
+            <img src="./assets/Оборудование_запласти_v_комплектующие.png" alt="Для двигателя">
+          </div>
+          <div class="category-card__content">
+            <h3 class="category-card__title">Для двигателя</h3>
+            <p class="category-card__description">Оригинальные запчасти и комплектующие для судовых двигателей</p>
+            <a href="#engine" class="btn btn--primary category-card__btn">Смотреть товары</a>
+          </div>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-card__image">
+            <img src="./assets/Рулевое_управление_v_маневренность.png" alt="Для трансмиссии">
+          </div>
+          <div class="category-card__content">
+            <h3 class="category-card__title">Для трансмиссии</h3>
+            <p class="category-card__description">Компоненты трансмиссии, редукторы, валы, подшипники</p>
+            <a href="#transmission" class="btn btn--primary category-card__btn">Смотреть товары</a>
+          </div>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-card__image">
+            <img src="./assets/Плановое_техническое_обслуживание_v_сезонная_подготовка.png" alt="Расходники">
+          </div>
+          <div class="category-card__content">
+            <h3 class="category-card__title">Расходники</h3>
+            <p class="category-card__description">Масла, фильтры, уплотнители, технические жидкости</p>
+            <a href="#consumables" class="btn btn--primary category-card__btn">Смотреть товары</a>
+          </div>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-card__image">
+            <img src="./assets/Судовая электрика и питание.png" alt="Электрооборудование">
+          </div>
+          <div class="category-card__content">
+            <h3 class="category-card__title">Электрооборудование</h3>
+            <p class="category-card__description">Электрические компоненты, проводка, реле, датчики</p>
+            <a href="#electronics" class="btn btn--primary category-card__btn">Смотреть товары</a>
+          </div>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-card__image">
+            <img src="./assets/Климат и комфорт.png" alt="Климатическое оборудование">
+          </div>
+          <div class="category-card__content">
+            <h3 class="category-card__title">Климатическое оборудование</h3>
+            <p class="category-card__description">Кондиционеры, отопители, вентиляционные системы</p>
+            <a href="#climate" class="btn btn--primary category-card__btn">Смотреть товары</a>
+          </div>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-card__image">
+            <img src="./assets/Навигация и управление.png" alt="Навигация и связь">
+          </div>
+          <div class="category-card__content">
+            <h3 class="category-card__title">Навигация и связь</h3>
+            <p class="category-card__description">Радары, эхолоты, GPS, радиостанции, AIS системы</p>
+            <a href="#navigation" class="btn btn--primary category-card__btn">Смотреть товары</a>
+          </div>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-card__image">
+            <img src="./assets/Тестирование_после_работ_v_приемка.png" alt="Безопасность">
+          </div>
+          <div class="category-card__content">
+            <h3 class="category-card__title">Безопасность</h3>
+            <p class="category-card__description">Спасательное оборудование, системы пожаротушения</p>
+            <a href="#safety" class="btn btn--primary category-card__btn">Смотреть товары</a>
+          </div>
+        </div>
+        
+        <div class="category-card">
+          <div class="category-card__image">
+            <img src="./assets/Аудио и мультимедиа.png" alt="Интерьер и комфорт">
+          </div>
+          <div class="category-card__content">
+            <h3 class="category-card__title">Интерьер и комфорт</h3>
+            <p class="category-card__description">Мебель, обивка, освещение, санитарное оборудование</p>
+            <a href="#interior" class="btn btn--primary category-card__btn">Смотреть товары</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ПОПУЛЯРНЫЕ ТОВАРЫ ==================== -->
+  <section class="popular-equipment">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Популярные товары</h2>
+        <p class="section-subtitle">Часто заказываемое оборудование и запчасти</p>
+      </div>
+      
+      <div class="products-grid">
+        <!-- Товар 1 -->
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="assets/products/motor-oil.jpg" alt="Моторное масло для яхт">
+            <div class="product-card__badge">Хит продаж</div>
+          </div>
+          <div class="product-card__content">
+            <h3 class="product-card__title">Моторное масло для яхт</h3>
+            <p class="product-card__description">Специальное масло для судовых дизельных двигателей</p>
+            <div class="product-card__details">
+              <span class="product-card__category">Расходники</span>
+              <span class="product-card__price">от 2 500 ₽</span>
+            </div>
+            <button class="btn btn--primary product-card__btn" data-product="Моторное масло для яхт">
+              <i class="fas fa-shopping-cart"></i>
+              Заказать
+            </button>
+          </div>
+        </div>
+        
+        <!-- Товар 2 -->
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="assets/products/filter-set.jpg" alt="Комплект фильтров">
+            <div class="product-card__badge">Новинка</div>
+          </div>
+          <div class="product-card__content">
+            <h3 class="product-card__title">Комплект фильтров</h3>
+            <p class="product-card__description">Масляный, топливный и воздушный фильтры</p>
+            <div class="product-card__details">
+              <span class="product-card__category">Расходники</span>
+              <span class="product-card__price">от 8 900 ₽</span>
+            </div>
+            <button class="btn btn--primary product-card__btn" data-product="Комплект фильтров">
+              <i class="fas fa-shopping-cart"></i>
+              Заказать
+            </button>
+          </div>
+        </div>
+        
+        <!-- Товар 3 -->
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="assets/products/gps-system.jpg" alt="Навигационная система">
+          </div>
+          <div class="product-card__content">
+            <h3 class="product-card__title">Навигационная система</h3>
+            <p class="product-card__description">GPS-навигатор с картами для яхт и катеров</p>
+            <div class="product-card__details">
+              <span class="product-card__category">Навигация</span>
+              <span class="product-card__price">от 45 000 ₽</span>
+            </div>
+            <button class="btn btn--primary product-card__btn" data-product="Навигационная система">
+              <i class="fas fa-shopping-cart"></i>
+              Заказать
+            </button>
+          </div>
+        </div>
+        
+        <!-- Товар 4 -->
+        <div class="product-card">
+          <div class="product-card__image">
+            <img src="assets/products/bilge-pump.jpg" alt="Помпа для откачки воды">
+          </div>
+          <div class="product-card__content">
+            <h3 class="product-card__title">Помпа для откачки воды</h3>
+            <p class="product-card__description">Автоматическая помпа для откачки воды из трюма</p>
+            <div class="product-card__details">
+              <span class="product-card__category">Оборудование</span>
+              <span class="product-card__price">от 12 500 ₽</span>
+            </div>
+            <button class="btn btn--primary product-card__btn" data-product="Помпа для откачки воды">
+              <i class="fas fa-shopping-cart"></i>
+              Заказать
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== КАТЕГОРИИ С ПОДРОБНЫМ ОПИСАНИЕМ ==================== -->
+  <!-- Двигатель -->
+  <section id="engine" class="equipment-section">
+    <div class="container">
+      <div class="equipment-section__header">
+        <h2 class="equipment-section__title">Оборудование для двигателя</h2>
+        <p class="equipment-section__subtitle">Оригинальные запчасти и комплектующие для судовых двигателей</p>
+      </div>
+      
+      <div class="equipment-list">
+        <div class="equipment-item">
+          <div class="equipment-item__image">
+            <img src="./assets/Диагностика_двигателя_v_системы_охлаждения.png" alt="Запчасти для двигателя">
+          </div>
+          <div class="equipment-item__content">
+            <h3 class="equipment-item__title">Поршневые группы и кольца</h3>
+            <p class="equipment-item__description">
+              Оригинальные поршни, кольца и пальцы для двигателей Volvo Penta, Yanmar, Mercury, Suzuki.
+              Гарантия соответствия техническим характеристикам и надежной работы в морских условиях.
+            </p>
+            <ul class="equipment-item__features">
+              <li><i class="fas fa-check"></i> Оригинальные запчасти</li>
+              <li><i class="fas fa-check"></i> Гарантия качества</li>
+              <li><i class="fas fa-check"></i> Быстрая поставка</li>
+            </ul>
+            <button class="btn btn--primary equipment-item__btn" data-category="Двигатель" data-product="Поршневые группы">
+              <i class="fas fa-shopping-cart"></i>
+              Запросить цену
+            </button>
+          </div>
+        </div>
+        
+        <div class="equipment-item equipment-item--reverse">
+          <div class="equipment-item__image">
+            <img src="./assets/Поиск_v_устранение_неисправностей_двигателя.png" alt="Турбокомпрессоры">
+          </div>
+          <div class="equipment-item__content">
+            <h3 class="equipment-item__title">Турбокомпрессоры и компоненты</h3>
+            <p class="equipment-item__description">
+              Турбокомпрессоры, картриджи, роторы, валы и корпуса для восстановления и ремонта турбонагнетателей.
+              Работаем с оригинальными производителями и качественными аналогами.
+            </p>
+            <ul class="equipment-item__features">
+              <li><i class="fas fa-check"></i> Новые и восстановленные</li>
+              <li><i class="fas fa-check"></i> Тестирование перед поставкой</li>
+              <li><i class="fas fa-check"></i> Консультация по установке</li>
+            </ul>
+            <button class="btn btn--primary equipment-item__btn" data-category="Двигатель" data-product="Турбокомпрессоры">
+              <i class="fas fa-shopping-cart"></i>
+              Запросить цену
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Трансмиссия -->
+  <section id="transmission" class="equipment-section">
+    <div class="container">
+      <div class="equipment-section__header">
+        <h2 class="equipment-section__title">Компоненты трансмиссии</h2>
+        <p class="equipment-section__subtitle">Редукторы, валы, подшипники и другие компоненты трансмиссии</p>
+      </div>
+      
+      <div class="equipment-list">
+        <div class="equipment-item">
+          <div class="equipment-item__image">
+            <img src="./assets/Диагностика_рулевого_управления_v_гидравлических_систем.png" alt="Компоненты трансмиссии">
+          </div>
+          <div class="equipment-item__content">
+            <h3 class="equipment-item__title">Редукторы и ремонтные комплекты</h3>
+            <p class="equipment-item__description">
+              Ремонтные комплекты для редукторов, включая шестерни, подшипники, сальники и уплотнения.
+              Для всех популярных моделей редукторов судовых двигателей.
+            </p>
+            <ul class="equipment-item__features">
+              <li><i class="fas fa-check"></i> Полные ремкомплекты</li>
+              <li><i class="fas fa-check"></i> Индивидуальные компоненты</li>
+              <li><i class="fas fa-check"></i> Техническая поддержка</li>
+            </ul>
+            <button class="btn btn--primary equipment-item__btn" data-category="Трансмиссия" data-product="Редукторы">
+              <i class="fas fa-shopping-cart"></i>
+              Запросить цену
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Электрооборудование -->
+  <section id="electronics" class="equipment-section">
+    <div class="container">
+      <div class="equipment-section__header">
+        <h2 class="equipment-section__title">Электрооборудование и компоненты</h2>
+        <p class="equipment-section__subtitle">Электрические компоненты, проводка, реле, датчики для морских условий</p>
+      </div>
+      
+      <div class="equipment-list">
+        <div class="equipment-item">
+          <div class="equipment-item__image">
+            <img src="./assets/Интеграция_v_модернизация_существующих_систем.png" alt="Электрооборудование">
+          </div>
+          <div class="equipment-item__content">
+            <h3 class="equipment-item__title">Морская электрика и проводка</h3>
+            <p class="equipment-item__description">
+              Специальные кабели, разъемы, клеммы и электронные компоненты, устойчивые к морской воде, соли и вибрации.
+              Вся продукция соответствует стандартам морской электротехники.
+            </p>
+            <ul class="equipment-item__features">
+              <li><i class="fas fa-check"></i> Водонепроницаемые разъемы</li>
+              <li><i class="fas fa-check"></i> Медные кабели с двойной изоляцией</li>
+              <li><i class="fas fa-check"></i> Антикоррозийная защита</li>
+            </ul>
+            <button class="btn btn--primary equipment-item__btn" data-category="Электрооборудование" data-product="Морская электрика">
+              <i class="fas fa-shopping-cart"></i>
+              Запросить цену
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== КАК МЫ РАБОТАЕМ ==================== -->
+  <section class="equipment-process">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Как мы работаем</h2>
+        <p class="section-subtitle">Процесс подбора и поставки оборудования</p>
+      </div>
+      
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="process-step__number">01</div>
+          <div class="process-step__content">
+            <h3 class="process-step__title">Запрос и консультация</h3>
+            <p class="process-step__description">
+              Вы отправляете запрос с описанием нужного оборудования или консультируетесь с нашим специалистом
+            </p>
+          </div>
+        </div>
+        
+        <div class="process-step">
+          <div class="process-step__number">02</div>
+          <div class="process-step__content">
+            <h3 class="process-step__title">Подбор оборудования</h3>
+            <p class="process-step__description">
+              Мы подбираем оптимальное решение, учитывая ваши требования, бюджет и условия эксплуатации
+            </p>
+          </div>
+        </div>
+        
+        <div class="process-step">
+          <div class="process-step__number">03</div>
+          <div class="process-step__content">
+            <h3 class="process-step__title">Согласование и оплата</h3>
+            <p class="process-step__description">
+              Согласовываем детали, предоставляем коммерческое предложение и выставляем счет
+            </p>
+          </div>
+        </div>
+        
+        <div class="process-step">
+          <div class="process-step__number">04</div>
+          <div class="process-step__content">
+            <h3 class="process-step__title">Поставка и установка</h3>
+            <p class="process-step__description">
+              Организуем доставку и при необходимости выполняем профессиональный монтаж оборудования
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ФОРМА ЗАПРОСА ОБОРУДОВАНИЯ ==================== -->
+  <section class="equipment-request">
+    <div class="container">
+      <div class="equipment-request__inner">
+        <div class="equipment-request__content">
+          <h2 class="equipment-request__title">Нужно оборудование или запчасти?</h2>
+          <p class="equipment-request__text">Заполните форму и наш специалист подберет оптимальное решение для вашей техники</p>
+          
+          <form class="request-form" id="equipmentForm">
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" name="name" placeholder="Ваше имя" required class="form-input">
+              </div>
+              <div class="form-group">
+                <input type="tel" name="phone" placeholder="Ваш телефон" required class="form-input">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Ваш email" class="form-input">
+            </div>
+            
+            <div class="form-group">
+              <textarea name="equipment" placeholder="Опишите необходимое оборудование или укажите артикулы" rows="4" required class="form-textarea"></textarea>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <input type="text" name="boat_model" placeholder="Модель яхты/катера" class="form-input">
+              </div>
+              <div class="form-group">
+                <input type="text" name="engine_model" placeholder="Модель двигателя" class="form-input">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label">
+                <input type="checkbox" name="installation" value="yes" class="form-checkbox">
+                <span>Требуется установка оборудования</span>
+              </label>
+            </div>
+            
+            <button type="submit" class="btn btn--primary request-form__btn">
+              <i class="fas fa-paper-plane"></i>
+              Отправить запрос
+            </button>
+          </form>
+        </div>
+        
+        <div class="equipment-request__info">
+          <h3 class="equipment-request__subtitle">Почему выбирают нас?</h3>
+          
+          <div class="advantages">
+            <div class="advantage">
+              <i class="fas fa-shield-alt advantage__icon"></i>
+              <div class="advantage__content">
+                <h4>Гарантия качества</h4>
+                <p>Работаем только с проверенными поставщиками и оригинальным оборудованием</p>
+              </div>
+            </div>
+            
+            <div class="advantage">
+              <i class="fas fa-shipping-fast advantage__icon"></i>
+              <div class="advantage__content">
+                <h4>Быстрая поставка</h4>
+                <p>Имеем собственные склады и налаженные логистические каналы</p>
+              </div>
+            </div>
+            
+            <div class="advantage">
+              <i class="fas fa-headset advantage__icon"></i>
+              <div class="advantage__content">
+                <h4>Техническая поддержка</h4>
+                <p>Консультируем по подбору и установке оборудования</p>
+              </div>
+            </div>
+            
+            <div class="advantage">
+              <i class="fas fa-wrench advantage__icon"></i>
+              <div class="advantage__content">
+                <h4>Монтаж и настройка</h4>
+                <p>Предлагаем профессиональную установку и настройку оборудования</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="request-contacts">
+            <p>Или свяжитесь напрямую:</p>
+            <a href="tel:+123456789" class="request-phone">+1 234 567 89</a>
+            <a href="https://t.me/BoostMarine" class="btn btn--telegram request-tg" target="_blank">
+              <i class="fab fa-telegram"></i>
+              Написать в Telegram
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ФУТЕР ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__logo">
+          <a href="index.html" class="logo">
+            <img src="assets/logo2.png" alt="Boost Marine" class="logo__img">
+            <div class="logo__text">
+              <span class="logo__top">BOOST</span>
+              <span class="logo__bottom">MARINE</span>
+            </div>
+          </a>
+          <p class="footer__tagline">Профессиональный ремонт водной техники</p>
+        </div>
+        
+        <div class="footer__nav">
+          <h4 class="footer__title">Навигация</h4>
+          <a href="index.html#works" class="footer__link">Работы</a>
+          <a href="index.html#team" class="footer__link">Команда</a>
+          <a href="services.html" class="footer__link">Услуги</a>
+          <a href="equipment.html" class="footer__link">Оборудование</a>
+          <a href="index.html#contacts" class="footer__link">Контакты</a>
+        </div>
+        
+        <div class="footer__equipment">
+          <h4 class="footer__title">Оборудование</h4>
+          <a href="#engine" class="footer__link">Для двигателя</a>
+          <a href="#transmission" class="footer__link">Для трансмиссии</a>
+          <a href="#electronics" class="footer__link">Электрооборудование</a>
+          <a href="#consumables" class="footer__link">Расходники</a>
+        </div>
+        
+        <div class="footer__contacts">
+          <h4 class="footer__title">Контакты</h4>
+          <a href="tel:+123456789" class="footer__link">+1 234 567 89</a>
+          <a href="https://t.me/boostmarinegroup" class="footer__link" target="_blank">Telegram канал</a>
+          <div class="footer__social">
+            <a href="https://t.me/boostmarinegroup" class="social-icon" target="_blank">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://t.me/BoostMarine" class="social-icon" target="_blank">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://wa.me/123456789" class="social-icon" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 Boost Marine. Все права защищены.</p>
+        <p class="footer__note">Выезд без ограничений по региону</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== МОДАЛЬНОЕ ОКНО ДЛЯ ЗАКАЗА ОБОРУДОВАНИЯ ==================== -->
+  <div class="modal-overlay" id="equipmentModalOverlay">
+    <div class="modal modal--equipment" id="equipmentOrderModal">
+      <button class="modal__close" id="equipmentModalClose">
+        <i class="fas fa-times"></i>
+      </button>
+      
+      <div class="modal__content">
+        <h3 class="modal__title">Заказать оборудование</h3>
+        <p class="modal__subtitle">Запрос на <span id="modalProductName"></span></p>
+        
+        <form class="modal-form" id="equipmentModalForm">
+          <input type="hidden" name="product" id="modalProductInput">
+          <input type="hidden" name="category" id="modalCategoryInput">
+          
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Ваше имя" required class="form-input">
+          </div>
+          <div class="form-group">
+            <input type="tel" name="phone" placeholder="Ваш телефон" required class="form-input">
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Ваш email" class="form-input">
+          </div>
+          <div class="form-group">
+            <textarea name="message" placeholder="Дополнительная информация (количество, срочность и т.д.)" rows="3" class="form-textarea"></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn--primary modal-form__btn">
+            <i class="fas fa-paper-plane"></i>
+            Отправить запрос
+          </button>
+        </form>
+        
+        <div class="modal__contacts">
+          <p>Для срочных заказов:</p>
+          <a href="tel:+123456789" class="modal__phone">+1 234 567 89</a>
+          <a href="https://t.me/BoostMarine" class="btn btn--telegram modal__tg" target="_blank">
+            <i class="fab fa-telegram"></i>
+            Написать в Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  
+  <!-- Основной скрипт -->
+  <script src="script.js"></script>
+  <script src="equipment.js"></script>
+</body>
+</html>
